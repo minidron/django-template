@@ -1,0 +1,9 @@
+-r common.txt
+
+bumpversion==0.5.3
+django-debug-toolbar==1.11
+django-nose==1.4.6
+Fabric3==1.14.post1
+factory-boy==2.11.1
+nose==1.3.7
+pylama==7.7.1
