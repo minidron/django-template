@@ -1,15 +1,12 @@
-from {{ cookiecutter.project_name }}.libs.fabric_utils.fabric_class import (
-    add_class_methods_as_functions,
-    DjangoFabric
-)
+from fabric_class import add_class_methods_as_functions, DjangoFabric
 
 
 class Fabric(DjangoFabric):
-    host = '{{ cookiecutter.production_host }}'
     app_name = '{{ cookiecutter.project_name }}'
-    repository = '{{ cookiecutter.git_repository }}'
-    remote_db_name = '{{ cookiecutter.project_name }}'
+    host = '{{ cookiecutter.production_host }}'
     local_db_name = '{{ cookiecutter.local_db_name }}'
+    remote_db_name = '{{ cookiecutter.project_name }}'
+    repository = '{{ cookiecutter.git_repository }}'
     use_yarn = True
 
 
